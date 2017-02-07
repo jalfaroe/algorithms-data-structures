@@ -1,9 +1,7 @@
 package main.com.java.jairoalfaro.linkedlist;
 
 public class Node<T> {
-
 	private T value;
-
 	private Node<T> next;
 
 	public Node(T value) {

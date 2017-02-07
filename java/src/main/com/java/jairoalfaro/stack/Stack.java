@@ -4,7 +4,6 @@ import main.com.java.jairoalfaro.linkedlist.LinkedList;
 
 // A Last In First Out (LIFO) collection implemented as a linked list.
 public class Stack<T> {
-
 	private LinkedList<T> list = new LinkedList<T>();
 
 	// Adds the specified item to the stack

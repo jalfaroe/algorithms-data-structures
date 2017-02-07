@@ -1,9 +1,7 @@
 package main.com.java.jairoalfaro.DoublyLinkedList;
 
 public class Node<T> {
-
 	private T value;
-
 	private Node<T> next;
 	private Node<T> previous;
 

@@ -1,11 +1,8 @@
 package main.com.java.jairoalfaro.linkedlist;
 
 public class LinkedList<T> {
-
 	private Node<T> head;
-
 	private Node<T> tail;
-
 	private int count;
 
 	public int getCount() {
@@ -16,8 +13,8 @@ public class LinkedList<T> {
 		addFirst(value);
 	}
 
-	public void addFirst(T value) {
-		Node<T> node = new Node<T>(value);
+	public void addFirst(T item) {
+		Node<T> node = new Node<T>(item);
 		Node<T> temp = head;
 
 		head = node;
@@ -30,8 +27,8 @@ public class LinkedList<T> {
 		}
 	}
 
-	public void addLast(T value) {
-		Node<T> node = new Node<T>(value);
+	public void addLast(T item) {
+		Node<T> node = new Node<T>(item);
 
 		if (count == 0) {
 			head = node;
@@ -81,12 +78,12 @@ public class LinkedList<T> {
 		}
 	}
 
-	public void remove(T value) {
+	public void remove(T item) {
 		Node<T> previous = null;
 		Node<T> current = head;
 
 		while (current != null) {
-			if (current.getValue().equals(value)) {
+			if (current.getValue().equals(item)) {
 				// Remove First
 				if (previous == null) {
 					head = current.getNext();
@@ -114,12 +111,12 @@ public class LinkedList<T> {
 		}
 	}
 
-	public boolean contains(T value) {
+	public boolean contains(T item) {
 		Node<T> current = head;
 
 		while (current != null) {
 
-			if (current.getValue().equals(value)) {
+			if (current.getValue().equals(item)) {
 				return true;
 			}
 
