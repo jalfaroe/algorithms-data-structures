@@ -17,7 +17,6 @@ public class LinkedList<T> {
 	}
 
 	public void addFirst(T value) {
-
 		Node<T> node = new Node<T>(value);
 		Node<T> temp = head;
 
@@ -108,7 +107,6 @@ public class LinkedList<T> {
 	}
 
 	public boolean contains(T value) {
-
 		Node<T> current = head;
 
 		while (current != null) {
@@ -130,7 +128,6 @@ public class LinkedList<T> {
 	}
 
 	public void printList() {
-
 		Node<T> node = head;
 
 		while (node != null) {

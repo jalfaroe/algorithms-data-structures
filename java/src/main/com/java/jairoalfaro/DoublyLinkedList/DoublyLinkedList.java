@@ -22,18 +22,12 @@ public class DoublyLinkedList<T> {
 
 		Node<T> temp = head;
 
-		// Point head to the new node
 		head = node;
-
-		// Insert the rest of the list behind the head
 		head.setNext(temp);
 
 		if (count == 0) {
-			// if the list was empty then Head and Tail should
-			// both point to the new node.
 			tail = head;
 		} else {
-			// temp.Previous was null, now Head
 			temp.setPrevious(head);
 		}
 
