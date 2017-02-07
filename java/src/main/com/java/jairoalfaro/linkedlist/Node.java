@@ -3,11 +3,10 @@ package main.com.java.jairoalfaro.linkedlist;
 public class Node<T> {
 
 	private T value;
-	
+
 	private Node<T> next;
-	
-	public Node(T value)
-	{
+
+	public Node(T value) {
 		this.setValue(value);
 	}
 
@@ -18,12 +17,12 @@ public class Node<T> {
 	public void setValue(T value) {
 		this.value = value;
 	}
-	
+
 	public Node<T> getNext() {
 		return next;
 	}
 
 	public void setNext(Node<T> next) {
 		this.next = next;
-	}	
+	}
 }

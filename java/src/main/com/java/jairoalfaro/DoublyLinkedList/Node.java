@@ -1,14 +1,13 @@
 package main.com.java.jairoalfaro.DoublyLinkedList;
 
 public class Node<T> {
-	
+
 	private T value;
-	
+
 	private Node<T> next;
 	private Node<T> previous;
-	
-	public Node(T value)
-	{
+
+	public Node(T value) {
 		this.setValue(value);
 	}
 
@@ -19,7 +18,7 @@ public class Node<T> {
 	public void setValue(T value) {
 		this.value = value;
 	}
-	
+
 	public Node<T> getNext() {
 		return next;
 	}
