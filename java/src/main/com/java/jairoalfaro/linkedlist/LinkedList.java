@@ -42,6 +42,14 @@ public class LinkedList<T> {
 		tail = node;
 		count++;
 	}
+	
+	public T getFirst(){
+		if (count == 0) {
+			throw new IllegalStateException("The list is empty");
+		}
+		
+		return head.getValue();
+	}
 
 	public void removeFirst() {
 		if (count != 0) {
